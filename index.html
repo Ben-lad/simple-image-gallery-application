@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="./src//styles.css" />
+  </head>
+  <body>
+    <h1>Image Gallery</h1>
+
+    <form id="uploadForm">
+      <label for="imageInput" name="file">Choose File</label>
+      <input type="file" id="imageInput" accept="image/*" multiple />
+      <button type="submit">Upload</button>
+    </form>
+
+    <div class="gallery"></div>
+
+    <div class="modal">
+      <span class="close">&times;</span>
+      <img id="modalImage" />
+    </div>
+
+    <script src="./src/index.js"></script>
+  </body>
+</html>
